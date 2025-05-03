@@ -74,23 +74,25 @@ export default function Content({ elementoActivoHijo = 1 }) {
             }
 
             {elementoActivoHijo === 4 &&
-                (<div className="max-w-lg">
-                    <h1 className="text-2xl font-extrabold mb-4">Contacto</h1>
-                    <form>
-                        <div className="mb-4">
-                            <label htmlFor="name" className="block text-gray-700 dark:text-gray-200">Nombre completo:</label>
-                            <input type="text" id="name" className="w-full p-2 border border-gray-300 rounded-lg" required />
-                        </div>
-                        <div className="mb-4">
-                            <label htmlFor="email" className="block text-gray-700 dark:text-gray-200">Correo electrónico:</label>
-                            <input type="email" id="email" className="w-full p-2 border border-gray-300 rounded-lg" required />
-                        </div>
-                        <div className="mb-4">
-                            <label htmlFor="message" className="block text-gray-700 dark:text-gray-200">Mensaje:</label>
-                            <textarea id="message" rows="6" className="w-full p-2 border border-gray-300 rounded-lg"></textarea>
-                        </div>
-                        <button type="submit" className="bg-cyan-500 text-white px-4 py-2 rounded-lg">Enviar</button>
-                    </form>
+                (<div className="max-w-lg m-4">
+                    <div>
+                        <h1 className="text-2xl font-extrabold mb-4 text-center bg-teal-950 px-2 py-0 rounded-lg">Contacto</h1>
+                        <form>
+                            <div className="mb-4">
+                                <label htmlFor="name" className="block text-gray-700 dark:text-gray-200">Nombre completo:</label>
+                                <input type="text" id="name" className="w-full p-2 border border-gray-300 rounded-lg" required />
+                            </div>
+                            <div className="mb-4">
+                                <label htmlFor="email" className="block text-gray-700 dark:text-gray-200">Correo electrónico:</label>
+                                <input type="email" id="email" className="w-full p-2 border border-gray-300 rounded-lg" required />
+                            </div>
+                            <div className="mb-4">
+                                <label htmlFor="message" className="block text-gray-700 dark:text-gray-200">Mensaje:</label>
+                                <textarea id="message" rows="6" className="w-full p-2 border border-gray-300 rounded-lg"></textarea>
+                            </div>
+                            <button type="submit" className="bg-teal-950 text-white px-4 py-2 rounded-lg">Enviar</button>
+                        </form>
+                    </div>
                 </div>)
             }
         </div>
