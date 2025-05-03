@@ -13,7 +13,18 @@ export default function Content({ elementoActivoHijo = 1 }) {
                         garantizando resultados eficientes y satisfactorios para nuestros clientes.
                     </p>
                     <img src="/Img_nosotros.png" alt="first image" />
+                    <br />
                     <img src="/Img_nosotros02.png" alt="second image" />
+                    <br />
+                    <hr />
+                    <br />
+                    <h3 className="text-center">Clientes</h3>
+                    <img src="/Clientes.png" alt="" style={{ width: '1000px' }}  />
+                    <br />
+                    <hr />
+                    <br />
+                    <h3 className="text-center">Sedes</h3>
+                    <img src="/Img01_footer.png" alt="" style={{ width: '200px' }} className="ml-40" />
                 </div>)
             }
 
@@ -85,6 +96,10 @@ export default function Content({ elementoActivoHijo = 1 }) {
                             <div className="mb-4">
                                 <label htmlFor="email" className="block text-gray-700 dark:text-gray-200">Correo electrónico:</label>
                                 <input type="email" id="email" className="w-full p-2 border border-gray-300 rounded-lg" required />
+                            </div>
+                            <div className="mb-4">
+                                <label htmlFor="number" className="block text-gray-700 dark:text-gray-200">Número de teléfono:</label>
+                                <input type="number" id="number" className="w-full p-2 border border-gray-300 rounded-lg" required />
                             </div>
                             <div className="mb-4">
                                 <label htmlFor="message" className="block text-gray-700 dark:text-gray-200">Mensaje:</label>

@@ -27,13 +27,13 @@ const menu = function () {
             setElementoActivo(opcion.id);
           }}
         >
-          {opcion.nombre}
+           {opcion.nombre}
           {/* Se indica que elementoActivo es igual a la opción id seleccionada
       y && sirve para que si se cumple entonces se ejecute el código
       que está a la derecha de && */}
 
           {elementoActivo === opcion.id &&
-            (<span>→</span>)}
+            (<span>✓</span>)}
         </a>
       ))}
       <Content elementoActivoHijo={elementoActivo} />
@@ -51,7 +51,7 @@ export default function Home() {
       </main>
       <footer>
         <div>
-          <div className="items-center justify-center m-4 p-9 bg-white rounded-lg shadow-lg dark:bg-gray-600">
+          <div className="items-center justify-center m-2 p-9 bg-white rounded-lg shadow-lg dark:bg-gray-600">
             <h3 className="text-center">Derechos de autor</h3>
               <img src="/Logo empresa.png" alt="" style={{ width: '200px' }} />
           </div>
